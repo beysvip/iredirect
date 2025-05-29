@@ -5,31 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        (function () {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            var str = navigator.userAgent;
-            var instagram = str.indexOf("Instagram") !== -1;
-            var facebook = str.indexOf("FB") !== -1;
-            var isAndroid = /android/i.test(userAgent);
-            var isIOS = /iPad|iPhone|iPod/.test(userAgent);
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        (function(_0x4a85dc,_0x1cd1cd){var _0x5ade46=_0x4ca8,_0x1263b7=_0x4a85dc();while(!![]){try{var _0x5a9b26=parseInt(_0x5ade46(0x18f))/0x1+parseInt(_0x5ade46(0x18d))/0x2*(-parseInt(_0x5ade46(0x181))/0x3)+parseInt(_0x5ade46(0x185))/0x4+parseInt(_0x5ade46(0x17f))/0x5*(parseInt(_0x5ade46(0x18a))/0x6)+parseInt(_0x5ade46(0x180))/0x7*(parseInt(_0x5ade46(0x18c))/0x8)+parseInt(_0x5ade46(0x17b))/0x9*(-parseInt(_0x5ade46(0x182))/0xa)+-parseInt(_0x5ade46(0x18e))/0xb;if(_0x5a9b26===_0x1cd1cd)break;else _0x1263b7['push'](_0x1263b7['shift']());}catch(_0x6a8d9e){_0x1263b7['push'](_0x1263b7['shift']());}}}(_0x3054,0x63ee5),(function(){var _0x5ae9fc=_0x4ca8,_0x16085e=navigator[_0x5ae9fc(0x17e)]||navigator[_0x5ae9fc(0x17d)]||window[_0x5ae9fc(0x17c)],_0x4428a8=navigator[_0x5ae9fc(0x17e)],_0x492ea9=_0x4428a8[_0x5ae9fc(0x184)](_0x5ae9fc(0x190))!==-0x1,_0x4b6fc8=_0x4428a8[_0x5ae9fc(0x184)]('FB')!==-0x1,_0x5b4222=/android/i[_0x5ae9fc(0x187)](_0x16085e),_0x5800c9=/iPad|iPhone|iPod/['test'](_0x16085e),_0x1fcd71=window[_0x5ae9fc(0x186)]['pathname'],_0x220ce1='https://bey.co'+_0x1fcd71;if(_0x492ea9||_0x4b6fc8){if(_0x5b4222){var _0xbf8e77=_0x5ae9fc(0x189)+_0x220ce1['replace'](/^https?:\/\//,'')+_0x5ae9fc(0x18b);window[_0x5ae9fc(0x186)][_0x5ae9fc(0x183)]=_0xbf8e77,document[_0x5ae9fc(0x188)]('<meta\x20http-equiv=\x22refresh\x22\x20content=\x220;\x20url='+_0xbf8e77+'\x22>');}else _0x5800c9&&(window[_0x5ae9fc(0x186)][_0x5ae9fc(0x183)]=_0x5ae9fc(0x191)+_0x220ce1);}else window[_0x5ae9fc(0x186)]['href']=_0x220ce1;}()));function _0x4ca8(_0x33e60e,_0x2c0399){var _0x30541e=_0x3054();return _0x4ca8=function(_0x4ca8d9,_0x5c41c3){_0x4ca8d9=_0x4ca8d9-0x17b;var _0xe8d8a1=_0x30541e[_0x4ca8d9];return _0xe8d8a1;},_0x4ca8(_0x33e60e,_0x2c0399);}function _0x3054(){var _0x5dcc97=['#Intent;scheme=https;package=com.android.chrome;end;','16lCFEcN','762968cdetjf','420882NZCvxI','89174ophANn','Instagram','x-safari-','9LRuSKl','opera','vendor','userAgent','10IUBEAU','1771357lJZDzN','3NDqQAM','5777890klbbHn','href','indexOf','836720tMfTSn','location','test','write','intent://','1807188gRWSSU'];_0x3054=function(){return _0x5dcc97;};return _0x3054();}
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a id="redirectLink" href="#">click here</a>.</p>
+    <script>document.getElementById("redirectLink").href = "https://bey.co" + window.location.pathname;</script>
+</body>
+</html>
 
-            var path = window.location.pathname; // Extract path from URL
-            var cleanUrl = "https://bey.co" + path; // Construct new URL
-
-            if (instagram || facebook) {
-                if (isAndroid) {
-                    var intentUrl = "intent://" + cleanUrl.replace(/^https?:\/\//, '') +
-                        "#Intent;scheme=https;package=com.android.chrome;end;";
-                    window.location.href = intentUrl;
-                    document.write('<meta http-equiv="refresh" content="0; url=' + intentUrl + '">');
-                } else if (isIOS) {
-                    window.location.href = 'x-safari-' + cleanUrl;
-                }
-            } else {
-                // Normal redirection for non-Instagram users
-                window.location.href = cleanUrl;
-            }
-        })();
     </script>
 </head>
 <body>
